@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    <title>CPS</title>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <header class="header">
+        <a class="header__logo logo" href="/"><img src="./img/logo.png" alt="logotip" width="97" height="51"></a>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__item nav__item--call">
+                    <button type="button" class="nav__button nav__button--call call--active"></button>
+                </li>
+                <li class="nav__item nav__item--chat">
+                    <button type="button" class="nav__button nav__button--chat chat--active"></button>
+                </li>
+                <li class="nav__item nav__item--profile">
+                    <button type="button" class="nav__button nav__button--profile"></button>
+                </li>
+                <li class="nav__item nav__item--repair">
+                    <button type="button" class="nav__button nav__button--repair"></button>
+                </li>
+                <li class="nav__item nav__item--checkstatus">
+                    <button type="button" class="nav__button nav__button--checkstatus"></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="burger-menu">
+        <button type="button" class="nav__button burger-menu__button">
+            <span class="burger-menu__lines"></span>
+        </button>
+        <div class="aside">
+            <div class="aside__header">
+                <a class="aside__logo logo" href="/"><img src="./img/logo.png" alt="logotip" width="97" height="51"></a>
+                <button type="button" class="nav__button aside__search"></button>
+            </div>
+            <ul class="aside__menu">
+                <li class="aside__item aside__item--active"><a class="aside__link aside__link--active" href="#">Ремонт техники</a></li>
+                <li class="aside__item"><a class="aside__link" href="#">Услуги и сервисы</a></li>
+                <li class="aside__item"><a class="aside__link" href="#">Корпаротивным клиентам</a></li>
+                <li class="aside__item"><a class="aside__link" href="#">Продовцам техники</a></li>
+                <li class="aside__item"><a class="aside__link" href="#">Партнерам</a></li>
+                <li class="aside__item"><a class="aside__link" href="#">Производителям</a></li>
+                <li class="aside__item"><a class="aside__link" href="#">Наши сервисные центры</a></li>
+                <li class="aside__item"><a class="aside__link" href="#">Контакты</a></li>
+            </ul>
+            <div class="aside-footer">
+                <div class="aside-footer__nav">
+                    <button type="button" class="nav__button aside-footer--call call--active"></button>
+                    <button type="button" class="nav__button aside-footer--chat chat--active"></button>
+                    <button type="button" class="nav__button aside-footer--profile"></button>
+                </div>
+                <div class="aside-info">
+                    <a href="mailto:mail@cps.com" class="aside-info__mail">mail@cps.com</a>
+                    <a href="tel:88008908900" class="aside-info__tel">8 800 890 8900</a>
+                </div>
+                <div class="aside-tongue">
+                    <button type="button" class="aside-tongue__button aside-tongue__button--active">RU</button>
+                    <button type="button" class="aside-tongue__button">CH</button>
+                    <button type="button" class="aside-tongue__button">EN</button>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu__overlay burger-menu__overlay--active"></div>
+    </aside>
+    <section class="modal modal-feedback">
+        <button type="button" class="nav__button modal__close modal-feedback__cloce"></button>
+        <form class="modal-feedback__form modal__form" action="" moth="post">
+            <h2 class="modal-feedback__title modal__title">Обратная связь</h2>
+            <input class="modal__item modal__name modal-feedback__name" type="text" name="name" id="name" placeholder="Имя" required>
+            <input class="modal__item modal__phone modal-feedback__phone" type="tel" name="phone" id="phone" placeholder="Телефон" required> 
+            <input class="modal__item modal__email modal-feedback__email" type="email" name="email" id="email" placeholder="Электронная почта" required>
+            <textarea class="modal__item modal__textarea  modal-feedback__text-area" name="massage" id="massage" cols="30" rows="10" placeholder="Сообщение" required ></textarea> 
+            <p class="modal-feedback__text modal__text">Нажимая "отправить", вы даете согласие на <a href="#">обработку персональных данных</a>
+                и соглашаетесь с нашей <a href="#">политикой кондефиденциальности</a>
+            </p>
+            <button class="modal-feedback__button modal__connection ">ОТПРАВИТЬ<img class="modal__connection--img" src="./img/drop.svg"></button> 
+        </form>
+    </section>
+    <section class="modal modal-call">
+        <button type="button" class="nav__button modal__close modal-call__cloce"></button>
+        <form class="modal-call__form modal__form" action="" moth="post">
+            <h2 class="modal-call__title modal__title">Заказать звонок</h2>
+            <input class="modal__item modal__phone modal-call__phone" type="tel" name="phone" id="phone" placeholder="Телефон" required> 
+            <p class="modal-call__text modal__text">Нажимая "отправить", вы даете согласие на <a href="#">обработку персональных данных</a>
+                и соглашаетесь с нашей <a href="#">политикой кондефиденциальности</a>
+            </p>
+            <button class="modal-call__button modal__connection ">ОТПРАВИТЬ<img class="modal__connection--img" src="./img/drop.svg"></button> 
+        </form>
+    </section>
+    
+</body>
+</html>

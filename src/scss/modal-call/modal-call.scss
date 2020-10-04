@@ -1,0 +1,10 @@
+.modal-call {
+    right: -100%;
+    display: none;
+
+    &__button {
+        position: absolute;
+        top: 220px;
+        right: 20px;
+    }
+}

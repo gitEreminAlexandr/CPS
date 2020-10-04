@@ -1,0 +1,18 @@
+.modal__connection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 136px;
+    height: 32px;
+    background: #FF3E79;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+
+    &--img {
+        margin-left: 10px;
+    }
+}

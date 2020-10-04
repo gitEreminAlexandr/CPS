@@ -1,0 +1,39 @@
+.burger-menu-active {
+    overflow-y: scroll;
+
+
+    & .burger-menu {
+
+        &__button {
+            z-index: 40;
+        }
+
+        &__lines {
+            background-color: transparent;
+
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    & .aside {
+        left: 0;
+        box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.795),
+            0 0 50px 50px rgba(0,0,0, 0.3);
+    }
+}
+
+.none-scroll {
+
+    & header {
+        position: fixed;
+    }
+    
+}

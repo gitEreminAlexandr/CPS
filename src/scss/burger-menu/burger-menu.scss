@@ -1,0 +1,147 @@
+//aside-header
+.aside {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    width: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    transition: 1s ease;
+    
+    &__header {
+        height: 88px;
+        padding: 16px 24px;
+
+        
+    }
+
+    &__logo {
+        position: absolute;
+        top: 15px;
+        left: 75px;
+    }
+
+    &__search {
+        background-image: url(../img/search.svg);
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+}
+
+//menu
+.aside {
+    &__menu {
+        padding: 16px;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+
+        &--active ::before {
+            content: "|";
+            width: 4px;
+            height: 32px;
+            color: #41F6D7;
+            background-color: #41F6D7;
+            border-radius: 100px;
+            position: relative;
+            left: -18px;
+        }
+    }
+    
+    &__link {
+        font-weight: 500;
+        color: black;
+
+        &--active {
+            color: #7E7E82;
+        }
+    }
+}
+
+//footer
+.aside {
+    
+    &-footer {
+        margin-top: auto;
+        padding: 16px;
+
+        &--call {
+            background-image: url(../img/call.svg);
+            margin-right: 16px;
+        }
+        &--chat {
+            background-image: url(../img/chat.svg);
+            margin-right: 16px;
+        }
+        &--profile {
+            background-image: url(../img/profile.svg);
+        }
+    }
+
+    &-info {
+        padding: 16px 0;
+        display: flex;
+        flex-direction: column;
+
+        &__mail {
+            color: #1B1C21;
+            font-weight: 500;
+            padding-bottom: 5px;
+        }
+
+        &__tel {
+            color: #1B1C21;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    &-tongue {
+        
+        &__button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+
+            &--active {
+                color: #7E7E82;
+            }
+
+            &:hover {
+                color: #606061;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .burger-menu__button {
+        display: none;
+    
+    }
+
+
+    .aside {
+        position: fixed;
+        width: 290px;
+        left: 0;
+        box-shadow: none;
+        z-index: 0;
+
+        &__logo {
+            left: 25px;
+        }
+    }
+}
+
+.burger-menu {
+    position: static;
+}
+

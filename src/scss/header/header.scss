@@ -1,0 +1,78 @@
+//Styles Header
+.header {
+    width: 100%;
+    height: 88px;
+    padding: 24px;
+    background-color: #fff;
+    position: relative;
+}
+
+.header__logo {    
+    position: absolute;
+    top: 15px;
+    left: 75px;
+}
+
+.nav { 
+    
+    &__menu {
+        height: 88px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    &__button {
+        &--call { background-image: url(../img/call.svg); }
+        &--chat { background-image: url(../img/chat.svg); }
+        &--profile { background-image: url(../img/profile.svg); }
+        &--repair { background-image: url(../img/repair.svg); }
+        &--checkstatus { background-image: url(../img/checkstatus.svg); }
+    }
+
+    &__item {
+        margin-right: 16px;
+        display: none;
+
+        &--checkstatus { 
+            margin-right: 0;
+        }
+    }
+}
+
+//behavior 
+.nav{
+    &__item--burger-menu, &__item--repair, &__item--checkstatus {
+        display: inline-block;
+    }
+
+    &__item--repair::before {
+        content: " ";
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        background-color: $background-menu;
+        border-radius: 2px;
+        position: absolute;
+        top: 28px;
+        right: 135px;
+    }
+}
+
+@media screen and (min-width: $tablet-width) {
+    .nav {
+        &__item {
+            display: inline-block;
+            
+            &--profile {
+                margin-right: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .header {
+        display: none;
+    }
+}

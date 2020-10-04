@@ -1,0 +1,21 @@
+.modal-feedback {
+    right: -100%;
+    display: none;
+
+    &__button {
+        position: absolute;
+        top: 470px;
+        right: 20px;
+    }
+}
+
+
+@media screen and (min-width: $content-width) {
+
+    .modal-feedback {
+    
+        &__button {
+            top: 590px;
+        }
+    }
+}
