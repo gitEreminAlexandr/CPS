@@ -1,13 +1,12 @@
-const slider = document.querySelector('.block-2__slider');
+const sliderBlock2 = document.querySelector('.block-2__slider');
 const sliderBlock3 = document.querySelector('.block-3__slider');
 const sliderBlock4 = document.querySelector('.block-4__slider');
 
 let mySwiper;
-let mySwiper2;
 
-function mobileSlider() {
-    if (window.innerWidth <= 460 && slider.dataset.mobile == 'false') {
-        mySwiper = new Swiper(slider, {
+function block2MobileSlider() {
+    if (window.innerWidth <= 460 && sliderBlock2.dataset.mobile == 'false') {
+        mySwiper = new Swiper(sliderBlock2, {
             slidesPerView: 1.3,
             spaceBetween: 10,
             width: 310,
@@ -19,13 +18,13 @@ function mobileSlider() {
             },
         });
 
-        slider.dataset.mobile = 'true';
+        sliderBlock2.dataset.mobile = 'true';
     }
 
     if (window.innerWidth > 460) {
-        slider.dataset.mobile = 'false';
+        sliderBlock2.dataset.mobile = 'false';
 
-        if(slider.classList.contains('swiper-container-initialized')) {
+        if(sliderBlock2.classList.contains('swiper-container-initialized')) {
             mySwiper.destroy();
         }
         
@@ -87,13 +86,13 @@ function block4MobileSlider() {
     }
 }
 
-mobileSlider();
+block2MobileSlider();
 block3MobileSlider();
 block4MobileSlider();
 
 
 window.addEventListener('resize', () =>{
-    mobileSlider();
+    block2MobileSlider();
     block3MobileSlider();
     block4MobileSlider();
 });

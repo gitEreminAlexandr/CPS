@@ -7,7 +7,7 @@
     height: 100vh;
     transition: 2s ease;
     transition-property: right;
-    overflow: hidden;
+    z-index: 4;
 
     &__close {
         margin-top: 24px;
@@ -73,7 +73,7 @@
            position: absolute;
            top: 0px;
            right: 470px;
-           z-index: 3;
+           z-index: 10;
         }
 
         &__form {

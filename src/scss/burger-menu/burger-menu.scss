@@ -2,15 +2,15 @@
 .aside {
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translateX(-100%);
+    left: -100%;
+    transition: 2s ease;
+    transition-property: left;
     background-color: $color-light;
     width: 320px;
     min-height: 100vh;
     display: none;
     flex-direction: column;
-    z-index: 3;
-    transition: 1s ease;
+    z-index: 4;
     
     
     &__header {
@@ -132,7 +132,7 @@
     .aside {
         position: fixed;
         width: 290px;
-        transform: translate(0);
+        left: 0;
         box-shadow: none;
         display: flex;
 

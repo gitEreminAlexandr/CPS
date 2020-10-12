@@ -32,7 +32,5 @@ buttonBlock3.addEventListener('click', function () {
         expandImg.alt = 'expand';
         expandImg.style.transition = '0.5s ease';
         buttonBlock3.prepend(expandImg);
-
-
     };
 });
