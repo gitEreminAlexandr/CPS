@@ -10,6 +10,7 @@ var burgerMenu = document.querySelector('.burger-menu');
 
 var main = document.querySelector('.main');
 var header = document.querySelector('.header');
+var footer = document.querySelector('.footer');
 
 
 
@@ -20,6 +21,7 @@ callButton.addEventListener('click', function(){
     document.querySelector('.background-overlay').classList.add('background-overlay-active');
     main.classList.add('main-fixed');
     header.classList.add('header-fixed');
+    footer.classList.add('footer-fixed');
 })
 
 callButtonIsMenu.addEventListener('click', function(){
@@ -29,6 +31,7 @@ callButtonIsMenu.addEventListener('click', function(){
         document.querySelector('.background-overlay').classList.add('background-overlay-active');
         main.classList.add('main-fixed');
         header.classList.add('header-fixed');
+        footer.classList.add('footer-fixed');
     }
 })
 
@@ -37,6 +40,7 @@ callButtonClose.addEventListener('click', function(){
     document.querySelector('.background-overlay').classList.remove('background-overlay-active');
     main.classList.remove('main-fixed');
     header.classList.remove('header-fixed');
+    footer.classList.remove('footer-fixed');
 })
 
 
@@ -48,6 +52,7 @@ chatButton.addEventListener('click', function(){
     document.querySelector('.background-overlay').classList.add('background-overlay-active');
     main.classList.add('main-fixed');
     header.classList.add('header-fixed');
+    footer.classList.add('footer-fixed');
 })
 
 chatButtonIsMenu.addEventListener('click', function(){
@@ -57,6 +62,7 @@ chatButtonIsMenu.addEventListener('click', function(){
         document.querySelector('.background-overlay').classList.add('background-overlay-active');
         main.classList.add('main-fixed');
         header.classList.add('header-fixed');
+        footer.classList.add('footer-fixed');
     }
 })
 
@@ -65,4 +71,5 @@ chatButtonClose.addEventListener('click', function(){
     document.querySelector('.background-overlay').classList.remove('background-overlay-active');
     main.classList.remove('main-fixed');
     header.classList.remove('header-fixed');
+    footer.classList.remove('footer-fixed');
 })

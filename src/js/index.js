@@ -26,4 +26,5 @@ backgroundOverlay.addEventListener('click', function(){
     document.querySelector('.burger-menu').classList.remove('burger-menu-active');
     document.querySelector('.main').classList.remove('main-fixed');
     document.querySelector('.header').classList.remove('header-fixed');
+    document.querySelector('.footer').classList.remove('footer-fixed');
 })
