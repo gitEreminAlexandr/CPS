@@ -36,11 +36,12 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // Extract css to separate file
-          'css-loader', // translates CSS into CommonJS
-          'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
-          'sass-loader', // compiles Sass to CSS, using Node Sass by default
-        ],
+          'style-loader', 
+          MiniCssExtractPlugin.loader, 
+          'css-loader', 
+          'postcss-loader',
+          'sass-loader'
+        ]
       },
 
       // Подключаем шрифты из css
