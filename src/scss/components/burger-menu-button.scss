@@ -5,12 +5,13 @@
         top: 24px;
         left: 24px;
         background-color: #FF3E79;
+        z-index: 2;
     }
     
     &__lines {
         width: 14px;
         height: 2px;
-        background-color: #fff;
+        background-color: $color-light;
         position: absolute;
         top: 46%;
         left: 25%;
@@ -22,7 +23,7 @@
             position: absolute;
             width: 18px;
             height: 2.5px;
-            background-color: #fff;
+            background-color: $color-light;
             transition: 0.4s ease;
         }
 
@@ -33,7 +34,7 @@
             position: absolute;
             width: 18px;
             height: 2.5px;
-            background-color: #fff;
+            background-color: $color-light;
             transition: 0.4s ease;
         }
     }

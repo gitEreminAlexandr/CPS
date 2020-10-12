@@ -6,6 +6,8 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="icon" href="./img/logo.png" type="image/x-icon">
     <title>CPS</title>
 </head>
@@ -43,8 +45,8 @@
                 <button type="button" class="nav__button aside__search"></button>
             </div>
             <ul class="aside__menu">
-                <li class="aside__item aside__item--active"><a class="aside__link aside__link--active" href="#">Ремонт техники</a></li>
-                <li class="aside__item"><a class="aside__link" href="#">Услуги и сервисы</a></li>
+                <li class="aside__item"><a class="aside__link" href="#">Ремонт техники</a></li>
+                <li class="aside__item aside__item--active"><a class="aside__link aside__link--active" href="#">Услуги и сервисы</a></li>
                 <li class="aside__item"><a class="aside__link" href="#">Корпаротивным клиентам</a></li>
                 <li class="aside__item"><a class="aside__link" href="#">Продовцам техники</a></li>
                 <li class="aside__item"><a class="aside__link" href="#">Партнерам</a></li>
@@ -96,6 +98,247 @@
             <button class="modal-call__button modal__connection ">ОТПРАВИТЬ<img class="modal__connection--img" src="./img/drop.svg"></button> 
         </form>
     </section>
-    
+    <main class="main">
+        <div class="block-1">
+            <h2 class="block-1__title">Услуги и сервисы</h2>
+            <button type="button" class="block-1__button-repair nav__button"></button>
+            <button type="button" class="block-1__button-checkstatus nav__button"></button>
+            <div class="block-1__menu">
+                <button type="button" class="block-1__button block-1__button--active">Ремонтируемые устройства</button>
+                <button type="button" class="block-1__button">Дополнительные услуги</button>
+                <button type="button" class="block-1__button">Цены на услуги</button>
+                <button type="button" class="block-1__button">Специальные цены</button>
+                <button type="button" class="block-1__button">Адреса сервисных центров</button>
+                <button type="button" class="block-1__button">Отзывы</button>
+            </div>
+            <div class="block-1__info">
+                <p class="block-1__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    <br>
+                    <br>
+                    <span class="block-1__text-part-2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
+                    <span class="block-1__text-part-3">, что подтверждает большое количество постоянных клиентов. 
+                        Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        <br>
+                        <br>
+                    </span>
+                    
+                    <span class="block-1__text-part-4">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        <br>
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. 
+                        Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    </span>
+                    <button class="block-1__button-expand">Читать далее</button>
+                </p>
+                
+                <img src="./img/cps_img.jpg" alt="Кратинка с логотипом CPS" class="block-1__img" >
+            </div>
+        </div>
+        <div class="block-2">
+            <h3 class="block-2__title block__title">Ремонт техники различных брендов</h3>
+            <div class="block-2__slider slider-container" data-mobile="false">
+                <ul class="block-2__catalog swiper-wrapper">
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/lenova.png" alt="lenova">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/samsung.png" alt="samsung">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/apple.png" alt="apple">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/viewSonic.png" alt="viewsonic">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/bosch.png" alt="bosch">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/hp.png" alt="hp">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/acer.png" alt="acer">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/sony.png" alt="sony">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/lenova.png" alt="lenova">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/samsung.png" alt="samsung">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-2__card swiper-slide">
+                        <a href="#" class="block-2__link">
+                            <img class="block-2__brand" src="/img/apple.png" alt="apple">
+                            <div class="block-2__go button-go"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <button class="block-2__button"><img src="../img/expand.png" class="block-2__button-img">Показать все</button>
+            </div>
+        </div>
+        <div class="block-3">
+            <h3 class="block-3__title block__title">Ремонт различных видов техники</h3>
+            <div class="block-3__slider slider-container" data-mobile="false">
+                <ul class="block-3__catalog swiper-wrapper">
+                    <li class="block-3__card swiper-slide">
+                        <a href="#" class="block-3__link">
+                            <p class="block-3__tip">Ремонт ноутбуков</p>
+                            <div class="block-3__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-3__card swiper-slide">
+                        <a href="#" class="block-3__link">
+                            <p class="block-3__tip">Ремонт планшетов</p>
+                            <div class="block-3__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-3__card swiper-slide">
+                        <a href="#" class="block-3__link">
+                            <p class="block-3__tip">Ремонт ПК</p>
+                            <div class="block-3__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-3__card swiper-slide block-3__card--monitor">
+                        <a href="#" class="block-3__link">
+                            <p class="block-3__tip">Ремонт мониторов</p>
+                            <div class="block-3__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-3__card swiper-slide block-3__card--laptop">
+                        <a href="#" class="block-3__link">
+                            <p class="block-3__tip">Ремонт ноутбуков</p>
+                            <div class="block-3__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-3__card swiper-slide block-3__card--planshet">
+                        <a href="#" class="block-3__link">
+                            <p class="block-3__tip">Ремонт планшетов</p>
+                            <div class="block-3__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-3__card swiper-slide block-3__card--pk">
+                        <a href="#" class="block-3__link">
+                            <p class="block-3__tip">Ремонт ПК</p>
+                            <div class="block-3__go button-go"></div>
+                        </a>
+                    </li>
+                    <li class="block-3__card swiper-slide block-3__card--monitor2">
+                        <a href="#" class="block-3__link">
+                            <p class="block-3__tip">Ремонт мониторов</p>
+                            <div class="block-3__go button-go"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <button class="block-3__button"><img src="../img/expand.png" class="block-3__button-img">Показать все</button>
+            </div>
+            
+        </div>
+        <div class="block-4">
+            <h3 class="block-4__title block__title">Цены на услуги</h3>
+            <div class="block-4__price">
+                <h4 class="block-4__price-item block-4__price-item--position-start">Ремонтные услуги</h4>
+                <h4 class="block-4__price-item block-4__price-item--position-center">Цена</h4>
+                <h4 class="block-4__price-item block-4__price-item--position-end">Срок</h4>
+            </div>
+            <div class="block-4__slider slider-container" data-mobile="false">
+                <ul class="block-4__list swiper-wrapper">
+                    <li class="block-4__card swiper-slide  block-4__card--border-top">
+                        <p class="block-4__card-service">Ремонтные услуги</p>
+                        <p class="block-4__card-type">Диагностика</p>
+                        <p class="block-4__card-price">Цена</p>
+                        <p class="block-4__card-type-price">Бесплатно</p>
+                        <p class="block-4__card-term">Срок</p>
+                        <p class="block-4__card-time">30 мин</p>
+                        <button type="button" class="block-4__card-button">заказать<img class="modal__connection--img" src="./img/drop.svg"></button>
+                    </li>
+                    <li class="block-4__card swiper-slide">
+                        <p class="block-4__card-service">Ремонтные услуги</p>
+                        <p class="block-4__card-type">Замена дисплея</p>
+                        <p class="block-4__card-price">Цена</p>
+                        <p class="block-4__card-type-price">1 000 ₽</p>
+                        <p class="block-4__card-term">Срок</p>
+                        <p class="block-4__card-time">30-120 мин</p>
+                        <button type="button" class="block-4__card-button">заказать<img class="modal__connection--img" src="./img/drop.svg"></button>
+                    </li>
+                    <li class="block-4__card swiper-slide">
+                        <p class="block-4__card-service">Ремонтные услуги</p>
+                        <p class="block-4__card-type">Замена дисплея</p>
+                        <p class="block-4__card-price">Цена</p>
+                        <p class="block-4__card-type-price">1 000 ₽</p>
+                        <p class="block-4__card-term">Срок</p>
+                        <p class="block-4__card-time">30-120 мин</p>
+                        <button type="button" class="block-4__card-button">заказать<img class="modal__connection--img" src="./img/drop.svg"></button>
+                    </li>
+                    <li class="block-4__card swiper-slide">
+                        <p class="block-4__card-service">Ремонтные услуги</p>
+                        <p class="block-4__card-type">Тестирование с выдачей технического заключения</p>
+                        <p class="block-4__card-price">Цена</p>
+                        <p class="block-4__card-type-price">1 000 ₽</p>
+                        <p class="block-4__card-term">Срок</p>
+                        <p class="block-4__card-time">30-120 мин</p>
+                        <button type="button" class="block-4__card-button">заказать<img class="modal__connection--img" src="./img/drop.svg"></button>
+                    </li>
+                    <li class="block-4__card swiper-slide block-4__card--border-bottom">
+                        <p class="block-4__card-service">Ремонтные услуги</p>
+                        <p class="block-4__card-type">Замена программного обеспечения</p>
+                        <p class="block-4__card-price">Цена</p>
+                        <p class="block-4__card-type-price">1 000 ₽</p>
+                        <p class="block-4__card-term">Срок</p>
+                        <p class="block-4__card-time">30-120 мин</p>
+                        <button type="button" class="block-4__card-button">заказать<img class="modal__connection--img" src="./img/drop.svg"></button>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="block-4__info">
+                <p class="block-4__info-text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+                <a href="#" class="block-4__info-link">Получить коммерческое предложение <img src="./img/dropdown.svg"></a>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__developer">© 2019 CPS
+            <br>
+            Разработано командой Apesong </p>
+        <p class="footer__politics">Политика конфиденциальности</p>
+        <p class="footer__info">Информация, размещенная на данной странице, не является публичной офертой</p>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

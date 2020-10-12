@@ -8,6 +8,8 @@ var chatButtonIsMenu = document.querySelector('.aside-footer--chat');
 
 var burgerMenu = document.querySelector('.burger-menu');
 
+var main = document.querySelector('.main');
+var header = document.querySelector('.header');
 
 
 
@@ -16,6 +18,8 @@ var burgerMenu = document.querySelector('.burger-menu');
 callButton.addEventListener('click', function(){
     document.querySelector('.modal-call').classList.add('modal-call-active');
     document.querySelector('.background-overlay').classList.add('background-overlay-active');
+    main.classList.add('main-fixed');
+    header.classList.add('header-fixed');
 })
 
 callButtonIsMenu.addEventListener('click', function(){
@@ -23,12 +27,16 @@ callButtonIsMenu.addEventListener('click', function(){
     burgerMenu.classList.remove('burger-menu-active');
     if (!document.querySelector('.background-overlay-active')) {
         document.querySelector('.background-overlay').classList.add('background-overlay-active');
+        main.classList.add('main-fixed');
+        header.classList.add('header-fixed');
     }
 })
 
 callButtonClose.addEventListener('click', function(){
     document.querySelector('.modal-call').classList.remove('modal-call-active');
     document.querySelector('.background-overlay').classList.remove('background-overlay-active');
+    main.classList.remove('main-fixed');
+    header.classList.remove('header-fixed');
 })
 
 
@@ -38,6 +46,8 @@ callButtonClose.addEventListener('click', function(){
 chatButton.addEventListener('click', function(){
     document.querySelector('.modal-feedback').classList.add('modal-feedback-active');
     document.querySelector('.background-overlay').classList.add('background-overlay-active');
+    main.classList.add('main-fixed');
+    header.classList.add('header-fixed');
 })
 
 chatButtonIsMenu.addEventListener('click', function(){
@@ -45,10 +55,14 @@ chatButtonIsMenu.addEventListener('click', function(){
     burgerMenu.classList.remove('burger-menu-active');
     if (!document.querySelector('.background-overlay-active')) {
         document.querySelector('.background-overlay').classList.add('background-overlay-active');
+        main.classList.add('main-fixed');
+        header.classList.add('header-fixed');
     }
 })
 
 chatButtonClose.addEventListener('click', function(){
     document.querySelector('.modal-feedback').classList.remove('modal-feedback-active');
     document.querySelector('.background-overlay').classList.remove('background-overlay-active');
+    main.classList.remove('main-fixed');
+    header.classList.remove('header-fixed');
 })

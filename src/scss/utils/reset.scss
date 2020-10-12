@@ -21,6 +21,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  list-style: none;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -59,6 +60,8 @@ button,
 textarea,
 select {
   font: inherit;
+  outline: none;
+  cursor: pointer;
 }
 
 a {

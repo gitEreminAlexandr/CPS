@@ -1,0 +1,227 @@
+.block-4 {
+    margin-top: 24px;
+
+    &__price{
+        padding-left: 40px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        &-item {
+            margin-top: 16px;
+            font-weight: 400;
+            display: none;
+            color: $color-grey;
+        }
+    }
+
+    &__slider {
+        padding-left: 24px;
+        overflow: hidden;
+    }
+
+    &__list {
+        padding: 16px 0 16px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    &__card {
+        width: 260px;
+        height: 200px;
+        background-color: $color-light;
+        border-radius: 6px;
+        position: relative;
+        padding-top: 10px;
+        padding-left: 16px;
+        margin-left: 24px;
+        font-size: 14px;
+
+        &-service {
+            font-weight: 500;
+            color: $color-grey;
+        }
+
+        &-price {
+            font-weight: 500;
+            margin-top: 10px;
+            color: $color-grey;
+        }
+
+        &-term {
+            font-weight: 500;
+            margin-top: 10px;
+            color: $color-grey;
+        }
+
+        &-button {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            background-color: $button-color;
+            color: $color-light;
+            font-weight: 400;
+            width: 116px;
+            height: 32px;
+            border: none;
+            font-size: 12px;
+            border-radius: 16px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__info {
+        max-width: 500px;
+        margin: 24px;
+
+        &-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: $color-font;
+            font-weight: 500;
+        
+            & img{
+                margin-left: 5px;
+                display: inline;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: $tablet-width) {
+    .block-4 {
+
+        &__price {
+
+            &-item {
+                display: inline-block;
+
+                &--position-start {
+                    position: relative;
+                    left: 0px;
+                }
+
+                &--position-center {
+                    position: relative;
+                    left: 250px;
+                }
+
+                &--position-end {
+                    position: relative;
+                    left: 310px;
+                }
+            }
+        }
+
+        &__slider {
+            padding-left: 16px;
+        }
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__card {
+            border-radius: 0;
+            width: 730px;
+            height: 64px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-left: 0;
+            border-bottom: 1px solid $color-dividing-line;
+
+            &--border-top {
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+
+            &--border-bottom {
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border: none;
+            }
+            
+
+            &-type-price {
+                position: absolute;
+                width: 90px;
+                right: 230px;
+                text-align: start;
+            }
+
+            &-time {
+                position: absolute;
+                width: 90px;
+                right: 140px;
+                text-align: start;
+            }
+
+            &-service {
+                display: none;
+            }
+    
+            &-price {
+                display: none;
+            }
+    
+            &-term {
+                display: none;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .block-4 {
+        &__price {
+
+            &-item {
+
+                &--position-start {
+                    left: 20px;
+                }
+
+                &--position-center {
+                    left: 340px;
+                }
+
+                &--position-end {
+                    left: 500px;
+                }
+            }
+        }
+
+        &__slider {
+            padding-left: 40px;
+            
+        }
+
+        &__list {
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        &__card {
+            width: 1000px;
+
+            &-type-price {
+                right: 488px;
+            }
+
+            &-time {
+                right: 285px;
+            }
+        }
+    }
+}

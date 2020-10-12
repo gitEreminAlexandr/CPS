@@ -3,9 +3,11 @@
     top: 0;
     right: 0;
     width: 320px;
-    background-color: #ffffff;
-    min-height: 100vh;
-    transition: 1s ease;
+    background-color: $color-light;
+    height: 100vh;
+    transition: 2s ease;
+    transition-property: right;
+    overflow: hidden;
 
     &__close {
         margin-top: 24px;
@@ -40,7 +42,7 @@
 
     &__item {
         margin: 10px 0;
-        border: 1px solid #EAEAEA;
+        border: 1px solid $color-dividing-line;
         border-radius: 8px;
         padding: 5px;
         font-size: 16px;
@@ -57,14 +59,15 @@
         color: #7E7E82;
 
         & a {
-            color: #FF3E79;
+            color: $button-color;
         }
     }
 }
 
 @media screen and (min-width: $content-width) {
     .modal {
-       width: 440px; 
+       width: 440px;
+       position: fixed; 
 
         &__close {
            position: absolute;

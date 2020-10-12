@@ -1,0 +1,47 @@
+.footer {
+    text-align: center;
+    color: $color-grey;
+    font-size: 14px;
+    padding: 16px;
+    
+    border-top: 2px solid $color-dividing-block;
+    position: relative;
+
+    &__developer {
+        margin-bottom: 10px;
+    }
+
+    &__politics {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: $tablet-width) {
+    .footer {
+        padding-bottom: 52px;
+        padding-right: 0;
+
+        &__developer {
+            position: absolute;
+            top: 15px;
+            left: 16px;
+            text-align: start;
+        }
+
+        &__info {
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            width: 240px;
+            text-align: end;
+        }
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .footer {
+        margin-left: 290px;
+    }
+
+    
+}

@@ -1,0 +1,126 @@
+.block-3 {
+    margin-top: 24px;
+
+    &__slider {
+        padding-top: 24px;
+        padding-left: 24px;
+        overflow: hidden;
+    }
+
+    &__catalog {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__card {
+        width: 224px;
+        height: 160px;
+        padding: 0;
+        margin: 0;
+
+        
+    }
+    
+    &__link {
+        position: relative;
+        display: block;
+        width: 224px;
+        height: 160px;
+        background-color: $color-light;
+        border-radius: 6px;
+        border: 1px solid $color-dividing-line;
+    }
+
+    &__tip {
+        color: $color-font;
+        font-weight: 500;
+        padding: 16px;
+    }
+
+    &__go {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    &__button {
+        border: 0;
+        background: none;
+        font-size: 16px;
+        margin-bottom: 15px;
+        display: none;
+
+        &-img {
+            display: inline-block;
+            vertical-align: -6px;
+            padding-right: 5px;
+        }
+    }
+}
+
+
+@media screen and (min-width: $tablet-width) {
+    .block-3 {
+
+        &__catalog {
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            margin-right: 24px;
+            margin-bottom: 24px;
+
+            &--active {
+                display: list-item !important;
+            }
+
+            &--monitor {
+                display: none;
+            }
+
+            &--laptop {
+                display: none;
+            }
+
+            &--planshet {
+                display: none;
+            }
+
+            &--pk {
+                display: none;
+            }
+
+            &--monitor2 {
+                display: none;
+            }
+        }
+        &__button {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .block-3 {
+
+        &__card {
+
+            &--monitor {
+                display: list-item;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .block-3 {
+
+        &__slider {
+            margin-left: 30px;
+        }
+    }
+}
+

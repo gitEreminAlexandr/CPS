@@ -10,6 +10,10 @@
 @import "./components/burger-menu-button.scss";
 @import "./components/background-overlay.scss";
 
+@import "./components/block-title.scss";
+@import "./components/go-button.scss";
+
+
 
 //header
 @import "./header/header.scss";
@@ -27,3 +31,24 @@
 //modal-call
 @import "./modal-call/modal-call.scss";
 @import "./modal-call/modal-call-active.scss";
+
+
+
+//main
+@import "./main/main.scss";
+@import "./main/block-1.scss";
+@import "./main/block-2.scss";
+@import "./main/block-3.scss";
+@import "./main/block-4.scss";
+@import "./footer/footer.scss";
+
+
+
+.main-fixed {
+    position: fixed;
+    top: 88px;
+}
+
+.header-fixed {
+    position: fixed;
+}
