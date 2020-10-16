@@ -134,7 +134,7 @@
 
         &-menu {
             max-width: 290px;
-            min-height: 205vh;
+            height: auto;
             z-index: 1;
             display: flex;
             transform: translateX(0);
@@ -147,7 +147,7 @@
 
         &-footer {
             margin-top: 0;
-            margin-bottom: auto;
+            min-height: 1250px;
         }
 
         &-header__close {
