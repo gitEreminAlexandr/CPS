@@ -1,15 +1,8 @@
 .modal-feedback-active {
     z-index: 3;
+    position: absolute;
+    transform: translate(0);
     display: block;
-    animation-name: feedbackActive;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes feedbackActive {
-    100% {
-        right: 0;
-        box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.795),
+    box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.795),
             0 0 50px 50px rgba(0,0,0, 0.3);
-    }
 }

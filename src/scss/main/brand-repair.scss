@@ -1,0 +1,159 @@
+.brand-repair {
+    
+
+    &__slider {
+        position: relative;
+        overflow: hidden;
+        padding: 16px 24px;
+    }
+
+    &__catalog {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-wrap: nowrap;
+    }
+
+    &__card {
+        width: 224px;
+        height: 72px;
+        
+        &--none {
+            display: none;
+        }
+    }
+
+    &__link {
+        position: relative;
+        width: 224px;
+        height: 72px;
+        background-color: $color-light;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        border: 1px solid $color-content;
+        border-radius: 6px;
+    }
+
+    &__go {
+        position: absolute;
+        top: 15px;
+        transform: translateX(150px);
+    }
+    
+    &__button {
+        margin-bottom: 16px;
+        margin-left: 0px;
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: none;
+
+        &::before {
+            content: url(../img/expand.png);
+            transform-origin: center;
+            position: relative;
+            top: 5px;
+        }
+
+        &--active {
+
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.swiper-pagination {
+    display: block;
+    position: relative;
+    top: 5px;
+    z-index: 1
+}
+
+@media screen and (min-width: $tablet-width) {
+    .brand-repair {
+
+        &__catalog {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }    
+
+        &__button {
+            display: block;
+        }
+    }
+    
+    .card {
+        &-acer-none {
+            display: none;
+
+            &-active {
+                display: block !important;
+            }
+        }
+        &-sony-none {
+            display: none;
+
+            &-active {
+                display: block !important;
+            }
+        }
+        &-lenova-none {
+            display: none;
+
+            &-active {
+                display: block !important;
+            }
+        }
+        &-samsung-none {
+            display: none;
+
+            &-active {
+                display: block !important;
+            }
+        }
+        &-apple-none {
+            display: none;
+
+            &-active {
+                display: block !important;
+            }
+        }
+    }
+
+    
+
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .brand-repair {
+
+        &__slider {
+            margin-left: 30px;
+        }
+    }
+
+    .card {
+        &-acer-none {
+            display: block;
+        }
+        &-sony-none {
+            display: block;
+        }
+    }
+}

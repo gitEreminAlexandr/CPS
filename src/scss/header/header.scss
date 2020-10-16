@@ -1,72 +1,80 @@
 //Styles Header
 .header {
-    width: 100%;
-    height: 88px;
+    min-width: auto;
+    max-height: 98px;
+    background-color: #ffffff;
     padding: 24px;
-    background-color: $color-light;
-    position: relative;
     z-index: 1;
-}
 
-.header__logo {    
-    position: absolute;
-    top: 15px;
-    left: 75px;
-}
 
-.nav { 
-    
-    &__menu {
-        height: 88px;
+    &-menu {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
         padding: 0;
-    }
 
-    &__button {
-        &--call { background-image: url(../img/call.svg); }
-        &--chat { background-image: url(../img/chat.svg); }
-        &--profile { background-image: url(../img/profile.svg); }
-        &--repair { background-image: url(../img/repair.svg); }
-        &--checkstatus { background-image: url(../img/checkstatus.svg); }
-    }
+        &__card {
+            margin-right: 16px;
 
-    &__item {
-        margin-right: 16px;
-        display: none;
+            &--logotip {
+            margin-right: auto;
+            min-width: 32%;
+            }
+        }
 
-        &--checkstatus { 
-            margin-right: 0;
+        &__button--burger-menu {
+            background: #FF3E79 url(../img/burger_menu.svg) no-repeat 50% 50%;
+        }
+        &__button--call {
+            background: #FF3E79 url(../img/call.svg) no-repeat 50% 50%;
+            display: none;
+        }
+        &__button--chat {
+            background: #FF3E79 url(../img/chat.svg) no-repeat 50% 50%;
+            display: none;
+        }
+        &__button--profile {
+            background: #FF3E79 url(../img/profile.svg) no-repeat 50% 50%;
+            display: none;
+        }
+        &__button--repair {
+            background: #FF3E79 url(../img/repair.svg) no-repeat 50% 50%;
+            position: relative;
+
+            &::before {
+                content: " ";
+                display: inline-block;
+                width: 2px;
+                height: 32px;
+                background-color: $background-menu;
+                border-radius: 6px;
+                position: absolute;
+                top: 5px;
+                right: 65px;
+            }
+        }
+        &__button--checkstatus {
+            background: #FF3E79 url(../img/checkstatus.svg) no-repeat 50% 50%;
         }
     }
 }
 
-//behavior 
-.nav{
-    &__item--burger-menu, &__item--repair, &__item--checkstatus {
-        display: inline-block;
-    }
-
-    &__item--repair::before {
-        content: " ";
-        display: inline-block;
-        width: 2px;
-        height: 32px;
-        background-color: $background-menu;
-        border-radius: 2px;
-        position: absolute;
-        top: 28px;
-        right: 135px;
-    }
-}
-
 @media screen and (min-width: $tablet-width) {
-    .nav {
-        &__item {
-            display: inline-block;
+    .header {
+        &-menu {
+    
             
-            &--profile {
-                margin-right: 32px;
+            &__button--call {
+                display: list-item;
+            }
+            &__button--chat {
+                display: list-item;
+            }
+            &__button--profile {
+                display: list-item;
+                margin-right: 34px;
             }
         }
     }

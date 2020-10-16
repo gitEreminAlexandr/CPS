@@ -1,0 +1,40 @@
+.side {
+    &-menu {
+        margin: 24px ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    
+
+        &__button {
+            border: none;
+            border-radius: 6px;
+            background: none;
+            height: 40px;
+            margin-right: 25px;
+            
+            flex-shrink: 0;
+            font-size: 16px;
+
+            &:hover {
+                background-color: $color-light;
+            }
+
+            &--active {
+                background-color: $color-light;
+                border: 2px solid #B8FFEC;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .side {
+        &-menu {
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+    }
+}

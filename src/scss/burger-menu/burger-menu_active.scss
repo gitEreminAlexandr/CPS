@@ -1,49 +1,11 @@
 .burger-menu-active {
+    display: flex;
     overflow-y: scroll;
-
-
-
-    & .burger-menu {
-
-        &__button {
-            z-index: 40;
-        }
-
-        &__lines {
-            background-color: transparent;
-
-            &::before {
-                top: 0;
-                transform: rotate(45deg);
-            }
-
-            &::after {
-                top: 0;
-                transform: rotate(-45deg);
-            }
-        }
-    }
-
-    & .aside {
-        display: flex;
-        animation-name: burgerActive;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-    }
-}
-
-.none-scroll {
-
-    & header {
-        position: fixed;
-    }
-}
-
-
-@keyframes burgerActive {
-    100% {
-        left: 0;
-        box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.795),
+    transform: translateY(-98px) !important;
+    transform: translateX(0);
+    box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.795),
             0 0 50px 50px rgba(0,0,0, 0.3);
-    }
 }
+
+
+

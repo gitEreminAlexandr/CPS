@@ -1,17 +1,20 @@
 .modal {
     position: absolute;
-    top: 0;
     right: 0;
-    width: 320px;
+    top: 0;
+    max-width: 320px;
     background-color: $color-light;
     height: 100vh;
     transition: 2s ease;
     transition-property: right;
-    z-index: 4;
+    z-index: 5;
+    padding: 24px 16px;
+    overflow: auto;
+
+    
+    
 
     &__close {
-        margin-top: 24px;
-        margin-left: 10px;
         background-image: url("../img/close.svg");
     }
 
@@ -20,8 +23,7 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
-        overflow: hidden;
-        padding: 5px  16px 120px 16px;
+        
     }
 
     &__title {
@@ -66,26 +68,19 @@
 
 @media screen and (min-width: $content-width) {
     .modal {
-       width: 440px;
-       position: fixed; 
+       
+       position: fixed;
+       min-height: 275vh;
 
         &__close {
-           position: absolute;
-           top: 0px;
-           right: 470px;
-           z-index: 10;
+            position: relative;
+            right: 90px;
+            z-index: 10;
         }
 
         &__form {
-           padding-top: 15px;
-        }
-
-        &__textarea {
-            height: auto;
-        }
-
-        &-feedback__button {
-            top: 600px;
+            position: relative;
+            top: -55px;
         }
     }
 }

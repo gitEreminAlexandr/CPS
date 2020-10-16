@@ -1,11 +1,11 @@
 .modal-feedback {
-    right: -100%;
+    transform: translate(150%);
     display: none;
 
     &__button {
-        position: absolute;
-        top: 470px;
-        right: 20px;
+        position: relative;
+        top: 10px;
+        left: 150px; 
     }
 }
 
@@ -13,9 +13,12 @@
 @media screen and (min-width: $content-width) {
 
     .modal-feedback {
-    
+        max-width: 440px;
+
         &__button {
-            top: 590px;
+            position: relative;
+            top: 10px;
+            left: 250px;
         }
     }
 }

@@ -1,8 +1,4 @@
-.modal__connection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.oval-button {
     width: 136px;
     height: 32px;
     background: $button-color;
@@ -11,8 +7,10 @@
     border-radius: 16px;
     border: none;
     cursor: pointer;
-
-    &--img {
+    
+    &::after {
         margin-left: 10px;
+        content:url(../img/drop.svg);
+        
     }
 }

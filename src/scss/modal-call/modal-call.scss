@@ -1,10 +1,23 @@
 .modal-call {
-    right: -100%;
+    transform: translate(150%);
     display: none;
 
+    &__form {
+        padding-bottom: 30px;
+    }
+
     &__button {
-        position: absolute;
-        top: 220px;
-        right: 20px;
+        text-align: center;
+        transform: translate(130px, 15px);
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .modal-call {
+        max-width: 440px;
+
+        &__button {
+            transform: translate(250px, 15px);
+        }
     }
 }

@@ -1,0 +1,18 @@
+.round-button { 
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: $button-color;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        filter: saturate(200%);
+        filter: drop-shadow(0 0 3px rgba(131, 128, 128, 0.5));
+    }
+    
+}

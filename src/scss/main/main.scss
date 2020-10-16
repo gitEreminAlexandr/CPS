@@ -1,5 +1,10 @@
+.main {
+    overflow-y: auto;
+    
+}
+
 @media screen and (min-width: $content-width) {
     .main {
-        margin-left: 290px;
+        margin-left: 250px;
     }
 }

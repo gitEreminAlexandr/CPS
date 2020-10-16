@@ -1,6 +1,5 @@
-.block-3 {
-    margin-top: 24px;
-
+.technician-repair {
+    
     &__slider {
         padding-top: 24px;
         padding-left: 24px;
@@ -47,23 +46,37 @@
     }
 
     &__button {
-        border: 0;
+        margin-bottom: 16px;
+        margin-left: 0px;
         background: none;
+        border: none;
         font-size: 16px;
-        margin-bottom: 15px;
+        font-weight: 500;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         display: none;
 
-        &-img {
-            display: inline-block;
-            vertical-align: -6px;
-            padding-right: 5px;
+        &::before {
+            content: url(../img/expand.png);
+            transform-origin: center;
+            position: relative;
+            top: 5px;
+        }
+
+        &--active {
+
+            &::before {
+                transform: rotate(180deg);
+            }
         }
     }
 }
 
 
 @media screen and (min-width: $tablet-width) {
-    .block-3 {
+    .technician-repair {
 
         &__catalog {
             flex-wrap: wrap;
@@ -104,7 +117,7 @@
 }
 
 @media screen and (min-width: $content-width) {
-    .block-3 {
+    .technician-repair {
 
         &__card {
 
@@ -116,11 +129,10 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-    .block-3 {
+    .technician-repair {
 
         &__slider {
             margin-left: 30px;
         }
     }
 }
-

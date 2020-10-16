@@ -1,0 +1,66 @@
+.main-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 16px;
+
+
+    &__heading {
+        margin-right: auto;
+
+        &::before {
+            content: "|";
+            width: 4px;
+            height: 32px;
+            color: #41F6D7;
+            background-color: #41F6D7;
+            border-radius: 100px;
+            position: relative;
+            left: -19px;
+        }
+    }
+
+    &__repair {
+        background: #FF3E79 url(../img/repair.svg) no-repeat 50% 50%;
+        margin-right: 160px;
+        display: none;
+
+        &::before {
+            content: "Оставить заявку";
+            font-weight: 500;
+            position: relative;
+            width: 150px;
+            display: flex;
+            flex-direction: row;
+            left: -150px;
+        }
+    }
+
+    &__checkstatus {
+        background: #FF3E79 url(../img/checkstatus.svg) no-repeat 50% 50%;
+        display: none;
+
+        &::before {
+            content: "Статус ремонта";
+            font-weight: 500;
+            position: relative;
+            width: 150px;
+            display: flex;
+            flex-direction: row;
+            left: -150px;
+        }
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .main-title {
+    
+        &__repair {
+            display: block;
+        }
+    
+        &__checkstatus {
+            display: block;
+        }
+    }
+}

@@ -1,13 +1,14 @@
 .background-overlay {
-    display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
     z-index: 3;
+    display: none;
+    overflow: hidden;
+}
 
-    &-active {
-        display: block;
-    }
+.background-overlay-active {
+    display: block;
 }

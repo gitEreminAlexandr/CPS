@@ -1,4 +1,4 @@
-.block-4 {
+.catalog {
     margin-top: 24px;
 
     &__price{
@@ -96,7 +96,7 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-    .block-4 {
+    .catalog {
 
         &__price {
 
@@ -161,7 +161,7 @@
             &-time {
                 position: absolute;
                 width: 90px;
-                right: 140px;
+                right: 130px;
                 text-align: start;
             }
 
@@ -183,7 +183,7 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-    .block-4 {
+    .catalog {
         &__price {
 
             &-item {
@@ -216,11 +216,11 @@
             width: 1000px;
 
             &-type-price {
-                right: 488px;
+                right: 440px;
             }
 
             &-time {
-                right: 285px;
+                right: 250px;
             }
         }
     }

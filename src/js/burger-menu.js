@@ -1,14 +1,17 @@
-var burgerButton = document.querySelector('.burger-menu__button');
+var burgerButton = document.querySelector('.header-menu__button--burger-menu');
+var burgerButtonClose = document.querySelector('.burger-header__close');
 var burgerMenu = document.querySelector('.burger-menu');
 var backgroundOverlay = document.querySelector('.background-overlay');
-var main = document.querySelector('.main');
-var header = document.querySelector('.header');
-var footer = document.querySelector('.footer')
+var pageScrrol = document.querySelector('.page');
 
 burgerButton.addEventListener('click', function(){
-    burgerMenu.classList.toggle('burger-menu-active');
-    backgroundOverlay.classList.toggle('background-overlay-active');
-    main.classList.toggle('main-fixed');
-    header.classList.toggle('header-fixed');
-    footer.classList.toggle('footer-fixed');
+    burgerMenu.classList.add('burger-menu-active');
+    backgroundOverlay.classList.add('background-overlay-active');
+    pageScrrol.classList.add('page-no-scrrol');
+});
+
+burgerButtonClose.addEventListener('click', function(){
+    burgerMenu.classList.remove('burger-menu-active');
+    backgroundOverlay.classList.remove('background-overlay-active');
+    pageScrrol.classList.remove('page-no-scrrol');
 });

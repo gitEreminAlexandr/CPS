@@ -1,6 +1,7 @@
-const sliderBlock2 = document.querySelector('.block-2__slider');
-const sliderBlock3 = document.querySelector('.block-3__slider');
-const sliderBlock4 = document.querySelector('.block-4__slider');
+
+const sliderBlock2 = document.querySelector('.brand-repair__slider');
+const sliderBlock3 = document.querySelector('.technician-repair__slider');
+const sliderBlock4 = document.querySelector('.catalog__slider');
 
 let mySwiper;
 
@@ -8,10 +9,10 @@ function block2MobileSlider() {
     if (window.innerWidth <= 460 && sliderBlock2.dataset.mobile == 'false') {
         mySwiper = new Swiper(sliderBlock2, {
             slidesPerView: 1.3,
-            spaceBetween: 10,
+            spaceBetween: 50,
             width: 310,
             slidesOffsetBefore: 10,
-            slidesOffsetAfter: 0,
+            slidesOffsetAfter: 20,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
@@ -38,7 +39,7 @@ function block3MobileSlider() {
             slidesPerView: 1.3,
             spaceBetween: 10,
             width: 340,
-            slidesOffsetBefore: -10,
+            slidesOffsetBefore: 5,
             slidesOffsetAfter: 25,
             pagination: {
                 el: '.swiper-pagination',

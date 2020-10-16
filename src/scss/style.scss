@@ -4,15 +4,12 @@
 
 
 //components
-@import "./components/nav-button.scss";
+@import "./components/round-button.scss";
 @import "./components/logo.scss";
-@import "./components/button-connection.scss";
-@import "./components/burger-menu-button.scss";
+@import "./components/oval-button.scss";
 @import "./components/background-overlay.scss";
-
-@import "./components/block-title.scss";
+@import "./components/section-title.scss";
 @import "./components/go-button.scss";
-
 
 
 //header
@@ -25,28 +22,31 @@
 
 //modal
 @import "./modal/modal.scss";
-//modal-feedback
+
 @import "./modal-feedback/modal-feedback.scss";
 @import "./modal-feedback/modal-feedback-active.scss";
-//modal-call
+
 @import "./modal-call/modal-call.scss";
 @import "./modal-call/modal-call-active.scss";
 
 
-
-//main
+//main 
 @import "./main/main.scss";
-@import "./main/block-1.scss";
-@import "./main/block-2.scss";
-@import "./main/block-3.scss";
-@import "./main/block-4.scss";
+@import "./main/main-title.scss";
+@import "./main/side-menu.scss";
+@import "./main/service-info.scss";
+@import "./main/brand-repair.scss";
+@import "./main/technician-repair.scss";
+@import "./main/catalog.scss";
+
+//footer
 @import "./footer/footer.scss";
+
 
 
 
 .main-fixed {
     position: fixed;
-
 }
 
 .header-fixed {
@@ -56,4 +56,28 @@
 .footer-fixed {
     position: fixed;
     bottom: 0;
+}
+
+.page {
+    margin: auto;
+    transform: translate(0%);
+    position: relative;
+}
+
+.page-no-scrrol {
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+
+    .page {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .page {
+        max-width: 1440px;
+    }
 }

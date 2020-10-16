@@ -1,147 +1,157 @@
-//aside-header
-.aside {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    transition: 2s ease;
-    transition-property: left;
-    background-color: $color-light;
-    width: 320px;
-    min-height: 100vh;
-    display: none;
-    flex-direction: column;
-    z-index: 4;
-    
-    
-    &__header {
-        height: 88px;
-        padding: 16px 24px;
-
-        
-    }
-
-    &__logo {
+.burger {
+    &-menu {
+        max-width: 360px;
+        height: 100vh;
+        background-color: #ffffff;
+        padding: 24px;
+        overflow-y: scroll;
+        display: flex;
         position: absolute;
-        top: 15px;
-        left: 75px;
+        flex-direction: column;
+        z-index: 5;
+        transform: translateX(-100%);
+        transition: 1s ease;
+        display: none;
     }
 
-    &__search {
-        background-image: url(../img/search.svg);
-        position: absolute;
-        top: 24px;
-        right: 24px;
-    }
-}
-
-//menu
-.aside {
-    &__menu {
-        padding: 16px;
-    }
-
-    &__item {
+    &-header {
+        max-height: 98px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         margin-bottom: 24px;
 
-        &--active ::before {
-            content: "|";
-            width: 4px;
-            height: 32px;
-            color: #41F6D7;
-            background-color: #41F6D7;
-            border-radius: 100px;
-            position: relative;
-            left: -18px;
-        }
-    }
-    
-    &__link {
-        font-weight: 500;
-        color: $color-font;
-
-        &--active {
-            color: $color-grey;
-        }
-    }
-}
-
-//footer
-.aside {
-    
-    &-footer {
-        margin-top: auto;
-        padding: 16px;
-
-        &--call {
-            background-image: url(../img/call.svg);
+        &__close {
             margin-right: 16px;
+            background-image: url(../img/close.svg);
         }
-        &--chat {
-            background-image: url(../img/chat.svg);
-            margin-right: 16px;
+
+        &__logo {
+            margin-right: auto;
         }
-        &--profile {
-            background-image: url(../img/profile.svg);
+
+        &__search {
+            background-image: url(../img/search.svg);
         }
     }
 
-    &-info {
-        padding: 16px 0;
-        display: flex;
-        flex-direction: column;
+    &-nav {
+        padding: 0;
+        padding-bottom: 24px;
+        min-height: 500px;
 
-        &__mail {
+        &__item {
+            line-height: 45px;
+
+            &--active::before {
+                content: "|";
+                width: 4px;
+                height: 32px;
+                color: #41F6D7;
+                background-color: #41F6D7;
+                border-radius: 100px;
+                position: relative;
+                left: -26px;
+            }
+        }
+
+        &__link {
             color: $color-font;
             font-weight: 500;
-            padding-bottom: 5px;
-        }
-
-        &__tel {
-            color: $color-font;
-            font-size: 24px;
-            font-weight: bold;
-        }
-    }
-
-    &-tongue {
-        
-        &__button {
-            background: none;
-            border: none;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
 
             &--active {
                 color: $color-grey;
             }
+        }
+        
+    }
 
-            &:hover {
-                color: #606061;
+    &-footer {
+        margin-top: auto;
+
+        &-nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 24px;
+
+            &__call {
+                background: #FF3E79 url(../img/call.svg) no-repeat 50% 50%;
+                margin-right: 16px;
+            }
+            &__chat {
+                background: #FF3E79 url(../img/chat.svg) no-repeat 50% 50%;
+                margin-right: 16px;
+            }
+            &__profile {
+                background: #FF3E79 url(../img/profile.svg) no-repeat 50% 50%;
+            }
+        }
+
+        &-contact {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+            
+
+            &__mail {
+                color: $color-font;
+                font-weight: 500;
+                padding-bottom: 5px;
+            }
+
+            &__tel {
+                color: $color-font;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+
+        &-tongue {
+
+            &__button {
+                background: none;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+    
+                &--active {
+                    color: $color-grey;
+                }
+    
+                &:hover {
+                    color: #606061;
+                }
             }
         }
     }
 }
 
 @media screen and (min-width: $content-width) {
-    .burger-menu__button {
-        display: none;
-    }
 
+    .burger {
 
-    .aside {
-        position: fixed;
-        width: 290px;
-        z-index: 1;
-        left: 0;
-        box-shadow: none;
-        display: flex;
+        &-menu {
+            max-width: 290px;
+            min-height: 205vh;
+            z-index: 1;
+            display: flex;
+            transform: translateX(0);
+            transition: none;
+            overflow: auto;
+        }
+        &-nav {
+            padding-bottom: 80px;
+        }
 
-        &__logo {
-            left: 25px;
+        &-footer {
+            margin-top: 0;
+            margin-bottom: auto;
+        }
+
+        &-header__close {
+            display: none;
         }
     }
 }
-
-
-
