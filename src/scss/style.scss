@@ -3,6 +3,10 @@
 @import "./utils/vars.scss";
 
 
+//swiper
+@import "../../node_modules/swiper/swiper-bundle.css";
+
+
 //components
 @import "./components/round-button.scss";
 @import "./components/logo.scss";
@@ -44,19 +48,6 @@
 
 
 
-
-.main-fixed {
-    position: fixed;
-}
-
-.header-fixed {
-    position: fixed;
-}
-
-.footer-fixed {
-    position: fixed;
-    bottom: 0;
-}
 
 .page {
     margin: auto;

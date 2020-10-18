@@ -10,7 +10,7 @@ var buttonFeedbackClose = document.querySelector('.modal-feedback__cloce');
 var activeFeedback = 'modal-feedback-active';
 var modalFeedback = document.querySelector('.modal-feedback');
 
-
+var pageScrrol = document.querySelector('.page');
 var burgerMenu = document.querySelector('.burger-menu');
 var backgroundOverlay = document.querySelector('.background-overlay');
 
@@ -18,6 +18,7 @@ var openModal = function(buttonOpen, buttonOpenIsMenu, buttonClose, block, activ
     buttonOpen.addEventListener('click', function(){
         block.classList.add(activClass);
         backgroundOverlay.classList.add('background-overlay-active');
+        pageScrrol.classList.add('page-no-scrrol');
     });
 
     buttonOpenIsMenu.addEventListener('click', function(){
@@ -25,12 +26,14 @@ var openModal = function(buttonOpen, buttonOpenIsMenu, buttonClose, block, activ
         burgerMenu.classList.remove('burger-menu-active');
         if (!document.querySelector('.background-overlay-active')) {
             backgroundOverlay.classList.add('background-overlay-active');
+            pageScrrol.classList.add('page-no-scrrol');
         }
     });
 
     buttonClose.addEventListener('click', function(){
         block.classList.remove(activClass);
         backgroundOverlay.classList.remove('background-overlay-active');
+        pageScrrol.classList.remove('page-no-scrrol');
     });
 };
 

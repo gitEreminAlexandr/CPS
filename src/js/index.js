@@ -1,9 +1,5 @@
 import '../scss/style.scss';
 
-
-
-
-
 //burger menu
 import './burger-menu.js';
 
@@ -18,7 +14,7 @@ import './technician-repair';
 
 
 //slider
-import './slider.js'
+import './slider.js';
 
 
 var backgroundOverlay = document.querySelector('.background-overlay');
