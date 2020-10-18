@@ -18,6 +18,7 @@ import './slider.js';
 
 
 var backgroundOverlay = document.querySelector('.background-overlay');
+var pageScrrol = document.querySelector('.page');
 
 var burgerMenu = document.querySelector('.burger-menu');
 var modalCall = document.querySelector('.modal-call');
@@ -28,4 +29,5 @@ backgroundOverlay.addEventListener('click', function() {
     modalCall.classList.remove('modal-call-active');
     modalFeedback.classList.remove('modal-feedback-active');
     backgroundOverlay.classList.remove('background-overlay-active');
+    pageScrrol.classList.remove('page-no-scrrol');
 })
